@@ -12,6 +12,6 @@
 
  异常的最上层父类时：Exception
 
-![屏幕截图 2024-06-27 175343](README.assets/1.png)
+![1](README.assets/1.png)
 
-![屏幕截图 2024-06-27 175916](README.assets/2.png)
+![2](README.assets/2.png)
