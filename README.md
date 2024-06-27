@@ -14,4 +14,4 @@
 
 ![1](README.assets/1.png)
 
-![2](README.assets/2.png)
+![屏幕截图 2024-06-27 220608](README.assets/屏幕截图 2024-06-27 220608.png)![2](README.assets/2.png)
