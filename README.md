@@ -12,6 +12,6 @@
 
  异常的最上层父类时：Exception
 
-![屏幕截图 2024-06-27 175343](README.assets/屏幕截图 2024-06-27 175343.png)
+![屏幕截图 2024-06-27 175343](https://github.com/mekatun/Summer-Study-Log/README.assets/屏幕截图 2024-06-27 175343.png)
 
 ![屏幕截图 2024-06-27 175916](README.assets/屏幕截图 2024-06-27 175916.png)
