@@ -14,6 +14,30 @@
 
 ![1](README.assets/1.png)
 
-![屏幕截图 2024-06-27 220608](README.assets/2024  -06-   272   206   08.png)![2](README.assets/2.png)
+![2](README.assets/2.png)
 
-![image-20240627225015618](README.assets/image-20240627225015618.png)
+throw 抛出异常
+
+程序出现异常，之后的代码就不会运行
+
+捕获异常:`try{}catch(){}`
+
+
+
+![image-20240628113510027](README.assets/image-20240628113510027.png)
+
+![image-20240628114305152](README.assets/image-20240628114305152.png)
+
+在jdk7以后，我们可以在一个catch中捕获多种异常.
+
+例如：要捕获两种不同的异常，但它们的处理方式是一样的，可以这么写：
+
+```
+try{
+    int a = 2/0;
+    throw new ArrayIndexOutOfBoundsException();
+}catch (ArithmeticException | ArrayIndexOutOfBoundsException e){
+    System.out.println(e);
+}
+```
+
