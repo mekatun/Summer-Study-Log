@@ -36,7 +36,7 @@ throw 抛出异常
 
 > 例如：要捕获两种不同的异常，但它们的处理方式是一样的，可以这么写：
 
-```
+```java
 try{
     int a = 2/0;
     throw new ArrayIndexOutOfBoundsException();
@@ -104,10 +104,30 @@ __异常的方法__:
 
   普通做法:
 
-  ![image-20240628185350747](README.assets/image-20240628185350747.png)
-
+  ```java
+  File desktopPath = new File("C:\\Users\\za\\Desktop");
+  File[] files = desktopPath.listFiles();
+  if (files != null) {
+      for (File file : files) {
+          if (file.isFile() && file.getName().endsWith(".txt")) {
+              System.out.println(file);
+          }
+      }
+  }
+  ```
+  
   利用过滤器：
-  ![image-20240628190228296](README.assets/image-20240628190228296.png)
+  
+  ```java
+  File desktopPath = new File("C:\\Users\\za\\Desktop");
+  File[] txtFiles = desktopPath.listFiles(new FileFilter() {
+      @Override
+      public boolean accept(File f) {
+          return f.isFile() && f.getName().endsWith(".txt");
+      }
+  });
+  System.out.println(Arrays.toString(txtFiles));
+  ```
 
 ---
 
@@ -117,4 +137,31 @@ __异常的方法__:
 
 ## IO流
 
-![image-20240628200925405](README.assets/image-20240628200925405.png)
+
+
+![image-20240628203900669](README.assets/image-20240628203900669.png)
+
+![image-20240629113628300](README.assets/image-20240629113628300.png)
+
+构造的第二个参数填入true表示续写，则不会情况文件
+
+```java
+FileOutputStream t = new FileOutputStream(desktopPath,true);
+```
+
+
+
+
+
+__换行:`\r\n`__
+
+
+
+
+
+
+
+
+
+
+
