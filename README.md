@@ -219,6 +219,9 @@ Reader
 
 
 
+![image-20240629225245183](README.assets/image-20240629225245183.png)
+
+
+
 FileWriter
 
-![image-20240629225245183](README.assets/image-20240629225245183.png)
