@@ -176,7 +176,7 @@ copy:
 
 JKD9之后,实现了AutoCloseable接口的类捕获异常的写法(会自动close):
 
-```
+```java
 File desktopTxt1 = new File("C:\\Users\\za\\Desktop\\test.txt");
 File desktopTxt2 = new File("C:\\Users\\za\\Desktop\\test2.txt");
 
@@ -216,3 +216,9 @@ Reader
 ![image-20240629205555943](README.assets/image-20240629205555943.png)
 
 ![image-20240629212138441](README.assets/image-20240629212138441.png)
+
+
+
+FileWriter
+
+![image-20240629225245183](README.assets/image-20240629225245183.png)
