@@ -1,16 +1,26 @@
-#### java
+## 索引
 
+#### C
+
+* [c语言笔记](c/c语言笔记.c)
+
+* [冒泡排序](c/冒泡排序.c)
+* [鸡兔同笼](c/鸡兔同笼.c)
+
+#### Java
+
+* [部分java基础](java/部分java基础.md)
 * [File类](java/File类.md)
 * [io流](java/io流.md)
 * [异常](java/异常.md)
 
-#### lc-rating
+#### Lc-rating
 
 * [string](lc-rating/string.md)
 
-#### c
+#### Linux
 
-* [c语言笔记](c/语言笔记.c)
+* [linux](linux/linux.md)
 
-* [冒泡排序](c/冒泡排序.c)
-* [鸡兔同笼](c/鸡兔同笼.c)
+
+
