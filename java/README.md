@@ -8,9 +8,9 @@
 
  异常的最上层父类时：`Exception`
 
-![1](README.assets/1.png)
+![1](imgs/1.png)
 
-![2](README.assets/2.png)
+![2](imgs/2.png)
 
 throw 抛出异常
 
@@ -24,9 +24,9 @@ throw 抛出异常
 
 
 
-![image-20240628113510027](README.assets/image-20240628113510027.png)
+![image-20240628113510027](imgs/image-20240628113510027.png)
 
-![image-20240628114305152](README.assets/image-20240628114305152.png)
+![image-20240628114305152](imgs/image-20240628114305152.png)
 
 ---
 
@@ -47,7 +47,7 @@ try{
 
 __异常的方法__:
 
-![image-20240628121040805](README.assets/image-20240628121040805.png)
+![image-20240628121040805](imgs/image-20240628121040805.png)
 
 **自定义异常**
 
@@ -64,22 +64,22 @@ __异常的方法__:
 
 **构造方法**:
 
-![image-20240628124432031](README.assets/image-20240628124432031.png)
+![image-20240628124432031](imgs/image-20240628124432031.png)
 
- ![image-20240628124529621](README.assets/image-20240628124529621.png)
+ ![image-20240628124529621](imgs/image-20240628124529621.png)
 
 一些**成员方法**：
 
-![image-20240628152504331](README.assets/image-20240628152504331.png)
+![image-20240628152504331](imgs/image-20240628152504331.png)
 
 `mkdir()`只能一级一级的创建
 `mkdirs()` 可以一次性创建多级文件夹
 
 > 所以一般用`mkdirs()`
 
-![image-20240628152910813](README.assets/image-20240628152910813.png)
+![image-20240628152910813](imgs/image-20240628152910813.png)
 
-![image-20240628154512799](README.assets/image-20240628154512799.png)
+![image-20240628154512799](imgs/image-20240628154512799.png)
 
 ---
 
@@ -139,7 +139,7 @@ __异常的方法__:
 
 
 
-![image-20240628203900669](README.assets/image-20240628203900669.png)
+![image-20240628203900669](imgs/image-20240628203900669.png)
 
 
 
@@ -147,7 +147,7 @@ __异常的方法__:
 
 
 
-![image-20240629113628300](README.assets/image-20240629113628300.png)
+![image-20240629113628300](imgs/image-20240629113628300.png)
 
 构造的第二个参数填入true表示续写，则不会情况文件
 
@@ -203,28 +203,29 @@ GBK字符集:
 Unicode字符集:
 UFT - 8（编码格式）: 编码用1~4字节保存,ascll用1个字节，中文用3个字节.英文二进制第一位是0，中文二进制第一位是1
 
-![image-20240629191415756](README.assets/image-20240629191415756.png)
+![image-20240629191415756](imgs/image-20240629191415756.png)
 
 Java中的编码、解码方式（默认使用utf-8）：
 
-![image-20240629192725864](README.assets/image-20240629192725864.png)
+![image-20240629192725864](imgs/image-20240629192725864.png)
 
 字符流
 
-![image-20240629205555943](README.assets/image-20240629205555943.png)
+![image-20240629205555943](imgs/image-20240629205555943.png)
 
-![image-20240629212138441](README.assets/image-20240629212138441.png)
+![image-20240629212138441](imgs/image-20240629212138441.png)
 
 
 
-![image-20240629225245183](README.assets/image-20240629225245183.png)
+![image-20240629225245183](imgs/image-20240629225245183.png)
 
 
 
 字节缓存流
 
-![image-20240701192055922](README.assets/image-20240701192055922.png)
+![image-20240701192055922](imgs/image-20240701192055922.png)
 
 字符缓冲流
-![image-20240701193510198](README.assets/image-20240701193510198.png)
+![image-20240701193510198](imgs/image-20240701193510198.png)
 
+![image-20240702162040814](imgs/image-20240702162040814.png)
