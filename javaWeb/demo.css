@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+#heizi{
+    /* float: left; */
+    width: 200px;
+
+}
+.t{
+    width: 100px;
+    height: 100px;
+    background-color: #fcf;
+    margin-left: 100px;
+    display: 100;
+    float: left;
+    padding-left: 300px;
+}

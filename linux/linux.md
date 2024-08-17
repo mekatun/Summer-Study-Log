@@ -62,4 +62,73 @@
 
  **`ifconfig`**   显示所有网络接口的IP地址
 
-grep
+
+
+&&   表示前面的命令执行成果了才会执行后面的
+
+```linux
+//这是一个简单的示例:
+mkdir my_directory && cd my_directory
+```
+
+如果 `mkdir my_directory` 成功创建了目录 `my_directory`，那么 `cd my_directory` 将会把当前目录切换到 `my_directory`；
+
+
+
+mkdir [选项] 目录名
+
+### 常见选项
+
+- `-p`：创建目录结构时，如果需要的父目录不存在，这个选项会自动创建所需的所有父目录。
+- `-v`：显示命令执行的详细信息。
+- `-m`：设置新建目录的权限（如 `-m 755`）。
+
+
+
+
+
+
+
+find [起始目录] -name [文件名]
+
+**在当前目录及其子目录中查找名为 `example.txt` 的文件**：
+
+```
+bash
+复制代码
+find . -name "example.txt"
+```
+
+**在根目录下查找名为 `example.txt` 的文件**：
+
+```
+bash
+复制代码
+find / -name "example.txt"
+```
+
+**使用通配符查找所有以 `.txt` 结尾的文件**：
+
+```
+bash
+复制代码
+find /path/to/search -name "*.txt"
+```
+
+**区分大小写查找文件（默认）**：
+
+```
+bash
+复制代码
+find /path/to/search -name "Example.txt"
+```
+
+**忽略大小写查找文件**：
+
+```
+bash
+复制代码
+find /path/to/search -iname "example.txt"
+```
+
+![image-20240720153811081](imgs/image-20240720153811081.png)
