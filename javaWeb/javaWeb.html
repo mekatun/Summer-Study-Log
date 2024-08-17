@@ -8,20 +8,22 @@
 </head>
 <body>
     <link rel="stylesheet" href="demo.css">
-    <div class="red" style="float: left;"></div>
-    <img src="c:\Users\za\Desktop\图片\白井黑子2.jpg" id = 'heizi' alt="">
     <div class="black"></div>
-    <hr>
-    <div class="t">2&nbsp;&nbsp;&nbsp;&nbsp;1</div>
+
+    <button class="btn" onclick="on()">神秘按钮</button>
 </body>
 <script>
-    alert("fuck you!");
-
-    for (let i = 0; i < 100; i++) {
-        var index = i;
-        document.write(i);
-        document.write("<br>");
-
+    function on(){
+        alert("click button");
     }
+
+
+    var black = document.getElementsByClassName("black");
+    black[0].onclick = function(){
+        alert("black");
+    }
+
+    var btn = document.getElementsByClassName("btn")[0];
+
 </script>
 </html>

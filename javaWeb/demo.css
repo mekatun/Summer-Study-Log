@@ -12,11 +12,6 @@
     height: 100px;
     background-color: black;
 }
-#heizi{
-    /* float: left; */
-    width: 200px;
-
-}
 .t{
     width: 100px;
     height: 100px;
@@ -25,4 +20,9 @@
     display: 100;
     float: left;
     padding-left: 300px;
+}
+.btn{
+    margin:20px auto;
+    color: black;
+    
 }
