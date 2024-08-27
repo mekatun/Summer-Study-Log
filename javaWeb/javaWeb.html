@@ -5,25 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <style></style>
+    <script src = "url"></script>
+    <script src = "js/axios-0.18.0.js"></script>
 </head>
 <body>
-    <link rel="stylesheet" href="demo.css">
-    <div class="black"></div>
+    <!-- <div id = "app" >
+        <input type="text" v-model = "url">
+        <a :href="url">进入网站</a>
+        {{message}}
 
-    <button class="btn" onclick="on()">神秘按钮</button>
+        <input type="button" value="点我" v-on:click = "btnClick()">
+    </div> -->
+    <!-- <link rel="stylesheet" href="demo.css">
+    <div class="black"></div>
+    <button class="btn" onclick="on()">神秘按钮</button> -->
+    <!-- <table id = "table">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>成绩</th>
+            <th>等级</th>
+        </tr>
+        <tr v-for = "(user,index) in user">
+            <td>{{index + 1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>
+                <span v-if = "user.gender == 1">男</span>
+                <span v-else>女</span>
+            </td>
+            <td>{{user.score}}</td>
+            <td>    
+                <span v-if = "user.score >= 80">优秀</span>
+                <span v-else-if = "user.score >= 65">良好</span>
+                <span v-else>不及格</span>
+            </td>
+        </tr>
+    </table> -->
 </body>
 <script>
-    function on(){
-        alert("click button");
-    }
+    //访问一个api,获取随机一条人生格言
+    var url = "https://api.adviceslip.com/advice";
 
+    axios.get(url).then((result) => {
+        console.log(result.data);
+        document.write(result.data.slip.advice);
+    }).catch((err) => {
+        console.error('Error:', err);
+    });
 
-    var black = document.getElementsByClassName("black");
-    black[0].onclick = function(){
-        alert("black");
-    }
+    // var get_url = "https://jsonplaceholder.typicode.com/posts/1";
+    // var post_url = "https://jsonplaceholder.typicode.com/posts";
+    // axios.post(post_url,"id=1").then((result)=>{
+    //     console.log(result.data);
+    // })
+    // axios.get(url).then((result)=>{
+    //     console.log(result.data);
+    //     // document.write(result.data);
+    // });
 
-    var btn = document.getElementsByClassName("btn")[0];
-
+    // new Vue({
+    //     el:"#table",
+    //     data:{
+    //         user : [
+    //             {
+    //                 name : "张三",
+    //                 age : 23,
+    //                 gender : 1,
+    //                 score : 88
+    //             },{
+    //                 name : "李四",
+    //                 age : 21,
+    //                 gender : 2,
+    //                 score : 68
+    //             },{
+    //                 name : "王五",
+    //                 age : 33,
+    //                 gender : 1,
+    //                 score : 48
+    //             }
+    //         ]
+    //     },
+    //     mounted(){
+    //         alert("vue挂载完成");
+    //     }
+    // })
+    // function on(){
+    //     alert("click button");
+    // }
+    // var black = document.getElementsByClassName("black");
+    // black[0].onclick = function(){
+    //     alert("black");
+    // } 
+    // var btn = document.getElementsByClassName("btn")[0];
+    //  new Vue({
+    //     el:"#app",//vue接管区域
+    //     data:{
+    //         message:"Hello Vue",
+    //         url : "https:www.baidu.com"
+    //     },
+    //     methods : {
+    //         btnClick : function(){
+    //             alert("button click!");
+    //         }
+    //     },
+    // })
 </script>
 </html>
