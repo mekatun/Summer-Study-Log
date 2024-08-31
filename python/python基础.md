@@ -52,33 +52,33 @@ print(type(z))  # 输出: <class 'str'>
 
 
 
-```
+```python
 # 模除
 7 % 3 # => 1
 # i % j 结果的正负符号会和 j 相同，而不是和 i 相同
 -7 % 3 # => 2
 ```
 
-```
+```python
 # x 的 y 次方
 2**4 # => 16
 ```
 
-```
+```python
 # 逻辑运算符，注意 and 和 or 都是小写
 # 有点像lua..
 True and False # => False
 False or True # => True
 ```
 
-```
+```python
 # True 和 False 实质上就是数字 1 和0
 True + True # => 2
 True * 8    # => 8
 False - 5   # => -5
 ```
 
-```
+```python
 # 使用布尔逻辑运算符对数字类型的值进行运算时，会把数值强制转换为布尔值进行运算
 # 但计算结果会返回它们的强制转换前的值
 # 注意不要把 bool(ints) 与位运算的 "按位与"、"按位或" (&, |) 混淆
@@ -89,7 +89,7 @@ bool(-6)    # => True
 -5 or 0     # => -5
 ```
 
-```
+```python
 # (is 对比 ==) is 判断两个变量是否引用同一个对象,
 # 而 == 判断两个对象是否含有相同的值
 a = [1, 2, 3, 4]  # 变量 a 是一个新的列表, [1, 2, 3, 4]
@@ -101,7 +101,7 @@ b is a            # => False, a 和 b 引用的不是同一个对象
 b == a            # => True, a 和 b 的对象的值相同
 ```
 
-```
+```python
 # 字符串可以使用加号连接成新的字符串
 "Hello " + "world!"  # => "Hello world!"
 # 非变量形式的字符串甚至可以在没有加号的情况下连接
@@ -134,7 +134,7 @@ f"{name} is {len(name)} characters long." # => "Reiko is 5 characters long."
 
 
 
-```
+```python
 # None是一个对象
 None  # => None
 
@@ -153,7 +153,7 @@ bool(()) # => False
 
 
 
-```
+```python
 # 默认情况下，print 函数会在输出结果后加入一个换行作为结尾
 # 可以使用附加参数改变输出结尾
 print("Hello, World", end="!")  # => Hello, World!
@@ -162,12 +162,12 @@ print("Hello, World", end="!")  # => Hello, World!
 input_string_var = input("Enter some data: ") # 返回字符串数值
 ```
 
-```
+```python
 # "if" 可以用作表达式，它的作用等同于 C 语言的三元运算符 "?:"
 "yay!" if 0 > 1 else "nay!"  # => "nay!"
 ```
 
-```
+```python
 # 用列表 (list) 储存序列
 li = []
 # 创建列表时也可以同时赋给元素
@@ -205,4 +205,60 @@ li2 = li[:]  # => li2 = [1, 2, 4, 3] ，但 (li2 is li) 会返回 False
 
 # 用 del 删除任何一个元素
 del li[2]   # li 现在为 [1, 2, 3]
+
+# 删除第一个匹配的元素
+li.remove(2)  # li 现在为 [1, 3]
+li.remove(2)  # 抛出错误 ValueError: 2 is not in the list
+
+# 在指定索引处插入一个新的元素
+li.insert(1, 2)  # li is now [1, 2, 3] again
+
+# 获得列表第一个匹配的值的索引
+li.index(2)  # => 1
+li.index(4)  # 抛出一个 ValueError: 4 is not in the list
+
+# 列表可以相加
+# 注意：li 和 other_li 的值都不变
+li + other_li   # => [1, 2, 3, 4, 5, 6]
+
+# 用 "extend()" 拼接列表
+li.extend(other_li)   # li 现在是[1, 2, 3, 4, 5, 6]
+
+# 用 "in" 测试列表是否包含值
+1 in li   # => True
+
+# 用 "len()" 取列表长度
+len(li)   # => 6
+
 ```
+
+
+
+```python
+# 元组类似列表，但是不允许修改
+tup = (1, 2, 3)
+tup[0]   # => 1
+tup[0] = 3  # 抛出 TypeError
+
+# 如果元素数量为 1 的元组必须在元素之后加一个逗号
+# 其他元素数量的元组，包括空元组，都不需要
+type((1))   # => <class 'int'>
+type((1,))  # => <class 'tuple'>
+type(())    # => <class 'tuple'>
+
+# 列表允许的操作元组大多都可以
+len(tup)   # => 3
+tup + (4, 5, 6)   # => (1, 2, 3, 4, 5, 6)
+tup[:2]   # => (1, 2)
+2 in tup   # => True
+
+# 可以把元组合列表解包，赋值给变量
+a, b, c = (1, 2, 3)     # 现在 a 是 1，b 是 2，c 是 3
+# 也可以做扩展解包
+a, *b, c = (1, 2, 3, 4)  # 现在 a 是 1, b 是 [2, 3]， c 是 4
+# 元组周围的括号是可以省略的
+d, e, f = 4, 5, 6 # 元组 4, 5, 6 通过解包被赋值给变量 d, e, f
+# 交换两个变量的值就这么简单
+e, d = d, e     # 现在 d 是 5，e 是 4
+```
+
